@@ -1,0 +1,33 @@
+##	Interface can have final static varibale.
+
+##  Interface can extends another interface only, not a class.
+
+##  Interface can not implement another interface only extends possible.
+
+##  Interface can have default method which can be override.
+
+##  Interface can have Static method. Static methods can be called using "Class_name].method_name();"
+	Static methods can't be inherited.
+	Static method and identifiers can be called using class name
+	class_name.method();
+	class_name.variable_name;
+	
+##	Interface can have private methods and private static methods but it must have an body and it can be called inside
+	an default method only. These private methods will improve code re-usability inside interfaces and will provide choice
+	to expose only our intended methods implementations to users.These methods are only accessible within that interface only
+	and cannot be accessed or inherited from an interface to another interface or class.
+	[Static members can accessible outside a class not a private static]
+
+##  We can create Interface data_type array.
+	interface test{
+		................
+		................
+	}
+	class callingClass{
+		public static void main(String args[]){
+			test obj[] = new test[size_of_array};
+		}
+	}
+  
+	
+##	default methods in interface if overridded then the over ridden method will execute

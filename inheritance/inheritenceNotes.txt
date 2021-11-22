@@ -1,0 +1,17 @@
+Parent class has access onnly to parent members but child class have access to parent as well as child 
+class members;
+
+In child class parameterized or non-parameterized constructor call parent class's non-parameterized 
+constructor. To call parent class parameterized constructor we have to use "super(parameters);"
+super keyword indicates the super class or parent class. super() means non-parameterized and 
+super(parameter) indicates parameterized constructor in parent class.
+
+super can use to invoke parent class data-members
+=================================================
+	return_type method_name{
+	super.variable="value"
+	}
+	
+	return_type method_name{
+	super.parent_class_method();
+	}

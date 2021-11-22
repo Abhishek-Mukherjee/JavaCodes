@@ -1,0 +1,6 @@
+##	Final Varibales are constant once they are initialized. Final variables can be initialized during
+	Variable declearation, or inside the instance block/ static block if the variable is static, or inside the constructor;
+	
+##	Final methods can't be overridden;
+
+##	Final class can't be inherited

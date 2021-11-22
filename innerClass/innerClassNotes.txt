@@ -1,0 +1,65 @@
+##	Innerclass can access data members of outer class without object, as it is a global data member.
+
+##	OuterClass cannot access innerclass members without an object.
+
+##	Accessing inner class outside of outer class is possible by creating inner class object only.
+	Create Inner class object:--
+	============================
+		OuterClass.InnerClass [object_name] = new OuterClassConstructor().InnerClassConstructor();
+		
+##	Object of Inner Class outside any method of outer class will be available for entire outer class's
+	methods and as well as the inner classes.
+	
+##	LocalInnerClass:----
+	===============
+	We we inherit an class or interface and that class is only usefull inside this method then we use 
+	this concept. LocalInnerClass can access outer class methods and instances without object.
+	class outer{
+		public void method(){
+			class localInner{
+				.............
+				............
+			}
+			localInner obj = new localInner();
+			obj.method();
+		}
+	}
+	
+##	Annonymus Inner Class :---
+	=====================
+	It can be defined on the time of object creation of an abstruct class or interface only. It can be created inside and outside any
+	method.
+	__________________________________
+	abstract class testClass{		  |
+		abstract void display();	  |
+	}								  |
+	__________________________________|
+	
+	____________________________________________________
+	class outer{
+		public void method(){
+			testClass obj = new testClass(){
+				public void display(){
+					System.out.println("Ok tested");
+				}
+			};
+		}
+	}
+	_____________________________________________________
+	
+##	Static Inner Class :---
+	==================
+	class outer{
+		static class innerStatic{
+			public void display(){
+				..............
+				..............
+			}
+		}
+	}
+	
+	class main{
+		public static void main(String args[]){
+			outer.innerStatic objectName = new outer.innerStatic();
+		}
+	}

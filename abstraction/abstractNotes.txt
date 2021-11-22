@@ -1,0 +1,4 @@
+Inside a abstract class private methods are not allowed.
+
+Inside a abstract class default methods are not allowd,
+default methods are allowed inside an interface only.

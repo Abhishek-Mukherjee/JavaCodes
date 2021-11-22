@@ -1,0 +1,15 @@
+##	Static memebers is not object specific it is class specific so it shares common memory
+	among all the objects.
+	
+##	Static methods can access only static members and methods.
+
+##	We can call static member or methods using class name or object
+
+##	If we have many static members we can create static innerClass and can access it without creating the object
+	of outerClass.
+	
+##	We cannot use this and super inside static methods or static innerClass as they are instance not static.
+
+##	Static methods inside staticInner class can be called using class name.
+
+##	Static blocks are called when the class is loaded.
