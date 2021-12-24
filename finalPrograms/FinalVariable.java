@@ -7,21 +7,24 @@ class finalVariableTest{
 	final int Z;
 	
 	static{
+		//inside static block
 		W=5;
 	}
 	
 	{
+		//inside instance Block
 		Y=20;
 	}
 	
 	finalVariableTest()
 	{
+		//inside constructor
 		Z=30;
 	}
 	
 	public void display()
 	{
-		final int x;
+		final int x; //this is different to the above variable
 		x=123;
 		System.out.println("Diplay method : X="+x);
 	}

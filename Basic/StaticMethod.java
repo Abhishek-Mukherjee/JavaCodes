@@ -1,6 +1,7 @@
 package Basic;
 
 public class StaticMethod {
+	static StaticMethod obj = new StaticMethod();
 	public void func1()
 	{
 		System.out.println("In function 1");
@@ -15,6 +16,9 @@ public class StaticMethod {
 	}
 	public static void main(String args[])
 	{
+		
+		// inside static methods only static mathod can be accessed
+		obj.func1();
 		func2(); // main and func2 is a static method 
 	}
 }
